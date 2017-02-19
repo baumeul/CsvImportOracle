@@ -19,11 +19,11 @@ $dir = "/Users/ulrichbaumeister/Sites/CsvImportOracle/csv/20170131";
 $postfix = ".20170131";
 // Verbindungsaufbau
 // 1. Vagrant Umgebung: Projects/95_VagrantCentOS7 (s20.vag.cen)
-// $conn = oci_connect('immo', 'Baumeul#3270', 's20.vag.cen/XE', 'AL32UTF8');
+// $conn = oci_connect('immo', 'pw', 's20.vag.cen/XE', 'AL32UTF8');
 // 2. OVH-Installation Ubuntu
-// $conn = oci_connect('immo', '4score7', 'ovh/XE', 'AL32UTF8');
+// $conn = oci_connect('immo', 'pw', 'ovh/XE', 'AL32UTF8');
 // 3. OVH-Installation CentOS7
-$conn = oci_connect('immo', 'Baumeul#3270', 's25.ovh.cen/XE', 'AL32UTF8');
+$conn = oci_connect('immo', 'pw', 's25.ovh.cen/XE', 'AL32UTF8');
 
 $cnt_read = 0;
 $cnt_insert = 0;
